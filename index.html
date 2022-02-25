@@ -8,7 +8,7 @@
     <meta name="keywords" content="one, two, three" />
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="normize.css" />
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -20,38 +20,65 @@
 
     <script src="script.js" defer></script>
 
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>Splitter | Tip calculator app</title>
   </head>
   <body>
     <header>
-      <div class="title">
-        <p>SPLI</p>
-        <p>TTER</p>
+      <div class="title center">
+        <p class="title-top">SPLI</p>
+        <p class="title-bottom">TTER</p>
       </div>
     </header>
 
     <main>
       <div class="calculator">
-        <p>Bill</p>
-        <input type="text" />
+        <div class="bill">
+          <p class="calculator-header">Bill</p>
+          <input type="number" placeholder="0" class="bill-input" />
+        </div>
 
-        <p>Select Tip %</p>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button>Custom</button>
+        <div>
+          <p class="calculator-header">Select Tip %</p>
+          <div class="tip-btns">
+            <button type="button" onclick="alert('working')">5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" placeholder="Custom" />
+          </div>
+        </div>
 
-        <p>Number of People</p>
-        <input type="text" />
+        <div>
+          <p class="calculator-header">Number of People</p>
+          <input type="number" placeholder="0" />
+        </div>
 
-        <p>Tip Amount</p>
-        <p>/ person</p>
+        <div class="results">
+          <div class="tip-amount">
+            <div class="results-text">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div>
+              <p class="output">$0.00</p>
+            </div>
+          </div>
 
-        <p>Total</p>
-        <p>/ person</p>
-        <button>Reset</button>
+          <div>
+            <div class="total">
+              <div class="results-text">
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <div>
+                <p class="output">$0.00</p>
+              </div>
+            </div>
+          </div>
+
+          <button>Reset</button>
+        </div>
       </div>
     </main>
   </body>
