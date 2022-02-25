@@ -1,17 +1,35 @@
 /******************************************
 /* CSS
 /*******************************************/
+:root {
+  --main-bg-color: #c5e4e7;
+  --light-bg-color: #fff;
+  --dark-bg-color: #00474b;
+  --textbox-bg-color: #f3f9fa;
+
+  --dark-text: #00474b;
+  --grey-text: #5e7a7d;
+  --light-text: #fff;
+}
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-
 
 /******************************************
 /* ADDITIONAL STYLES
