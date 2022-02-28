@@ -8,7 +8,7 @@
     <meta name="keywords" content="one, two, three" />
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="normize.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -34,24 +34,39 @@
       <div class="calculator">
         <div class="bill">
           <p class="calculator-header">Bill</p>
-          <input type="number" placeholder="0" class="bill-input" />
+          <input
+            type="number"
+            placeholder="0"
+            class="bill-input"
+            onblur="getBill()"
+          />
         </div>
 
         <div>
           <p class="calculator-header">Select Tip %</p>
           <div class="tip-btns">
-            <a href="#">5%</a>
-            <a href="#">10%</a>
-            <a href="#">15%</a>
-            <a href="#">25%</a>
-            <a href="#">50%</a>
-            <input type="number" placeholder="Custom" />
+            <a href="#" id="5" onclick="getPercent(this.id)">5%</a>
+            <a href="#" id="10" onclick="getPercent(this.id)">10%</a>
+            <a href="#" id="15" onclick="getPercent(this.id)">15%</a>
+            <a href="#" id="25" onclick="getPercent(this.id)">25%</a>
+            <a href="#" id="50" onclick="getPercent(this.id)">50%</a>
+            <input
+              type="number"
+              placeholder="Custom"
+              id="custom-percent"
+              onblur="getPercent(this.id)"
+            />
           </div>
         </div>
 
         <div>
           <p class="calculator-header">Number of People</p>
-          <input type="number" placeholder="0" />
+          <input
+            type="number"
+            placeholder="0"
+            class="people-input"
+            onblur="getPeople()"
+          />
         </div>
 
         <div class="results">
@@ -61,7 +76,7 @@
               <p>/ person</p>
             </div>
             <div>
-              <p class="output">$0.00</p>
+              <p class="output" id="tap">$0.00</p>
             </div>
           </div>
 
@@ -72,7 +87,7 @@
                 <p>/ person</p>
               </div>
               <div>
-                <p class="output">$0.00</p>
+                <p class="output" id="ttp">$0.00</p>
               </div>
             </div>
           </div>
