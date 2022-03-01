@@ -226,10 +226,16 @@ a:focus {
   .results {
     height: 417px;
     width: 413px;
+    padding: 2rem;
     display: flex;
   
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .output {
+    font-size: 45px;
+    font-weight: 600;
   }
 
   .total {
