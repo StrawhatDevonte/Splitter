@@ -96,7 +96,7 @@ input[type="number"] {
 /*******************************************/
 .calculator {
   background-color: var(--color-white);
-  height: 100vh;
+  height: 105vh;
   border-radius: 30px 30px 0px 0px;
   padding: 30px 30px;
 }
@@ -185,4 +185,31 @@ a:hover {
 a:focus {
   color: var(--color-dark-cyan);
   background-color: var(--color-strong-cyan);
+}
+
+@media (min-width: 920px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator {
+    height: 481px;
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .inputs {
+    height: 388px;
+    width: 379px;
+  }
+
+  .results {
+    height: 417px;
+    width: 413px;
+  }
 }

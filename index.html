@@ -32,48 +32,50 @@
 
     <main>
       <div class="calculator">
-        <div class="bill">
-          <p class="calculator-header">Bill</p>
-          <input
-            type="number"
-            placeholder="0"
-            inputmode="decimal"
-            pattern="[0-9.]*"
-            class="bill-input"
-            onblur="getBill()"
-          />
-        </div>
-
-        <div>
-          <p class="calculator-header">Select Tip %</p>
-          <div class="tip-btns">
-            <a href="#" id="5" onclick="getPercent(this.id)">5%</a>
-            <a href="#" id="10" onclick="getPercent(this.id)">10%</a>
-            <a href="#" id="15" onclick="getPercent(this.id)">15%</a>
-            <a href="#" id="25" onclick="getPercent(this.id)">25%</a>
-            <a href="#" id="50" onclick="getPercent(this.id)">50%</a>
+        <div class="inputs">
+          <div class="bill">
+            <p class="calculator-header">Bill</p>
             <input
               type="number"
-              min="0"
+              placeholder="0"
               inputmode="decimal"
               pattern="[0-9.]*"
-              placeholder="Custom"
-              id="custom-percent"
-              onblur="getPercent(this.id)"
+              class="bill-input"
+              onblur="getBill()"
             />
           </div>
-        </div>
 
-        <div>
-          <p class="calculator-header">Number of People</p>
-          <input
-            type="number"
-            inputmode="decimal"
-            pattern="[0-9.]*"
-            placeholder="0"
-            class="people-input"
-            onblur="getPeople()"
-          />
+          <div>
+            <p class="calculator-header">Select Tip %</p>
+            <div class="tip-btns">
+              <a href="#" id="5" onclick="getPercent(this.id)">5%</a>
+              <a href="#" id="10" onclick="getPercent(this.id)">10%</a>
+              <a href="#" id="15" onclick="getPercent(this.id)">15%</a>
+              <a href="#" id="25" onclick="getPercent(this.id)">25%</a>
+              <a href="#" id="50" onclick="getPercent(this.id)">50%</a>
+              <input
+                type="number"
+                min="0"
+                inputmode="decimal"
+                pattern="[0-9.]*"
+                placeholder="Custom"
+                id="custom-percent"
+                onblur="getPercent(this.id)"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="calculator-header">Number of People</p>
+            <input
+              type="number"
+              inputmode="decimal"
+              pattern="[0-9.]*"
+              placeholder="0"
+              class="people-input"
+              onblur="getPeople()"
+            />
+          </div>
         </div>
 
         <div class="results">
