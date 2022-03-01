@@ -52,6 +52,9 @@
             <a href="#" id="50" onclick="getPercent(this.id)">50%</a>
             <input
               type="number"
+              min="0"
+              inputmode="numeric"
+              pattern="[0-9].*"
               placeholder="Custom"
               id="custom-percent"
               onblur="getPercent(this.id)"
