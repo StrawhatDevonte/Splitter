@@ -68,3 +68,14 @@ function calculate() {
     console.log("READY");
   }
 }
+
+function reset() {
+  bill = 0;
+  people = 0;
+  percent = 0;
+  document.querySelector(".bill-input").value = "";
+  document.querySelector("#custom-percent").value = "";
+  document.querySelector(".people-input").value = "";
+  document.querySelector("#tap").textContent = "$0.00";
+  document.querySelector("#ttp").textContent = "$0.00";
+}
